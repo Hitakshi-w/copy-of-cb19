@@ -2,18 +2,20 @@
 
 session_start();
 
-$con = mysqli_connect('localhost', 'root', '');
+$con = mysqli_connect('localhost', 'root', '','userregistrations');
 
-mysqli_select_db($con, 'registrations');
-$name = $_POST['Name'];
-$email= $_POST['Email'];
-$password = $_POST['Password'];
-$s = " select * from usertable where Name = '$name' && Password = '$password'";
+
+// mysqli_select_db($con, 'registrations');
+$name = $_POST['name'];
+
+$password = $_POST['password'];
+$s = " select * from usertable where name = '$name' && password = '$password'";
 $result = mysqli_query($con, $s);
 $num = mysqli_num_rows($result);
 if($num == 1){
+    // mysqli_commit($con);
     header('location:index.html');
 }else{
-    header('location:login.php');
+    header('location:login.html');
 }
 ?>
