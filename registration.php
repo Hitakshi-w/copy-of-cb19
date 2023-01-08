@@ -7,8 +7,6 @@ $con = mysqli_connect('localhost', 'root', '','userregistrations');
 // mysqli_select_db($con, 'userregisteration');
 $name = $_POST['name'];
 $password = $_POST['password'];
-echo $name;
-echo $password;
 $s = " select * from usertable where name = '$name'";
 $result = mysqli_query($con, $s);
 $num = mysqli_num_rows($result);
