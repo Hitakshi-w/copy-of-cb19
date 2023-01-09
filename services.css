@@ -1,62 +1,22 @@
+html,
+body,
+section {
+  height: 100%;
+  width: 100%;
+}
+
 body {
-  width: 100vw;
-  height: 160vh;
   margin: 0;
-  background: #34496a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-p {
   width: 100vw;
-  height: 160vh;
-  margin: 0;
-  background: #34496a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  background-image: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
+  background-size: cover;
+  backdrop-filter:  brightness(80%);
 }
 
-.enter {
-  left: 1500px;
-  top: 800px;
-  width: 1500px;
-  bottom: 3000px;
-}
 
-p.webgl {
-  width: 800px;
-  height: 600px;
-  position: absolute;
-  z-index: -1;
-}
 
-p.webgl2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  outline: none;
-  z-index: 2;
-}
 
-p.bg-box {
-  width: 802px;
-  height: 602px;
-  position: absolute;
-  z-index: -1;
-}
-
-.svg-box {
-  width: 800px;
-  height: 600px;
-  position: absolute;
-  z-index: 1;
-}
-
-.svg-box #robot {
-  cursor: pointer;
-}
 
 .login-box {
   position: absolute;
