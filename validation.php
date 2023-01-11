@@ -14,7 +14,7 @@ $result = mysqli_query($con, $s);
 $num = mysqli_num_rows($result);
 if($num == 1){
     // mysqli_commit($con);
-    header('location:index.html');
+    header('location:services.html');
 }else{
     header('location:login.html');
 }

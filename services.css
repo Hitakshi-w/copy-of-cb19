@@ -1,33 +1,31 @@
-html,
-body,
-section {
-  height: 100%;
+html, body{
+  margin:0px; 
+  padding:0px;
+  height:100%;
+  background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");
+  brightness: 10%;
+}
+body{
+  position:relative;
   width: 100%;
 }
 
-body {
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
-  background-size: cover;
-  backdrop-filter:  brightness(80%);
-}
+
 
 
 
 
 
 .login-box {
-  position: absolute;
-  top: 180%;
+  position: relative;
+  top: 60%;
   left: 50%;
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 1);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 15px 25px rgb(0, 0, 0);
   border-radius: 10px;
 }
 
@@ -81,7 +79,6 @@ body {
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  overflow: hidden;
   transition: 0.5s;
   margin-top: 40px;
   letter-spacing: 4px;
@@ -214,8 +211,8 @@ body {
   }
 }
 #title {
-  position: absolute;
-  top: 35%;
+  position: relative;
+  top: 30%;
   left: 0;
   right: 0;
   color: #FFF;
@@ -236,28 +233,7 @@ body {
 
 #title1 {
   position: absolute;
-  top: 140%;
-  left: 0;
-  right: 0;
-  color: #FFF;
-  text-align: center;
-  font-family: cursive;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 3px;
-  margin-top: -60px;
-  padding-left: 10px;
-}
-
-#title1 span {
-  background: -webkit-linear-gradient(rgb(255, 255, 255), #a382e0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#title2 {
-  position: absolute;
-  top: 225%;
+  top: 125%;
   left: 0;
   right: 0;
   color: #FFF;
@@ -270,19 +246,10 @@ body {
   padding-left: 10px;
 }
 
-#title2 span {
+#title1 span {
   background: -webkit-linear-gradient(white, #03e9f4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-canvas {
-  display: block;
-}
-
-#canvas_container {
-  width: 100%;
-  height: 15vh;
 }
 
 button {
@@ -309,7 +276,7 @@ button:hover {
 
 nav {
   position: absolute;
-  top: 10%;
+  top: 20%;
   right: 0;
   left: 0;
   width: 319px;
